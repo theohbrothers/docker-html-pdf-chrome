@@ -1,0 +1,9 @@
+{
+  "html-pdf-chrome": {
+    "versions": [
+      "0.8.4"
+    ],
+    "versionsChangeScope": "minor",
+    "versionsNewScript": "Invoke-WebRequest https://api.github.com/repos/westy92/html-pdf-chrome/git/refs/tags | ConvertFrom-Json | % { $_.ref -replace 'refs/tags/v', '' } | ? { $_ -match '^\\d+\\.\\d+\\.\\d+$' } | Sort-Object { [version]$_ } -Descending | ? { [version]$_ -ge [version]'0.8' }"
+  }
+}
