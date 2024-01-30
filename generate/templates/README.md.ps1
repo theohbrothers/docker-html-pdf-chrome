@@ -26,6 +26,8 @@ $(
     }
 }) -join ''
 )
+- All images include ``node`` and ``npm``
+
 ## Usage
 
 To export a remote HTML page as .pdf:
@@ -35,7 +37,7 @@ docker run --rm -it -e URL=http://localhost -e PDF_FILE=export.pdf -v `$(pwd):`$
 docker run --rm -it -e URL=https://example.com -e PDF_FILE=export.pdf -v `$(pwd):`$(pwd) -w `$(pwd) theohbrothers/docker-html-pdf-chrome:$( $VARIANTS | % { $_['tag'] } | Select-Object -First 1 )
 ``````
 
-For export more complex cases, mount your custom script as `/export.js`:
+For export more complex cases, mount your custom script as ``/export.js``:
 
 ``````sh
 docker run --rm -it -v `$(pwd)/export.js:/export.js -v `$(pwd):`$(pwd) -w `$(pwd) theohbrothers/docker-html-pdf-chrome:$( $VARIANTS | % { $_['tag'] } | Select-Object -First 1 ) node /export.js

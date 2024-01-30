@@ -12,6 +12,8 @@ Dockerized [html-pdf-chrome](https://github.com/westy92/html-pdf-chrome), with h
 |:-------:|:---------:|
 | `:0.8.4`, `:latest` | [View](variants/0.8.4) |
 
+- All images include `node` and `npm`
+
 ## Usage
 
 To export a remote HTML page as .pdf:
@@ -21,7 +23,7 @@ docker run --rm -it -e URL=http://localhost -e PDF_FILE=export.pdf -v $(pwd):$(p
 docker run --rm -it -e URL=https://example.com -e PDF_FILE=export.pdf -v $(pwd):$(pwd) -w $(pwd) theohbrothers/docker-html-pdf-chrome:0.8.4
 ```
 
-For export more complex cases, mount your custom script as /export.js:
+For export more complex cases, mount your custom script as `/export.js`:
 
 ```sh
 docker run --rm -it -v $(pwd)/export.js:/export.js -v $(pwd):$(pwd) -w $(pwd) theohbrothers/docker-html-pdf-chrome:0.8.4 node /export.js
