@@ -26,7 +26,7 @@ $(
     }
 }) -join ''
 )
-- All images include ``node`` and ``npm``
+- All images are based on ``alpine``, and include ``node`` and ``npm``
 
 ## Usage
 

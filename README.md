@@ -12,7 +12,7 @@ Dockerized [html-pdf-chrome](https://github.com/westy92/html-pdf-chrome), with h
 |:-------:|:---------:|
 | `:0.8.4`, `:latest` | [View](variants/0.8.4) |
 
-- All images include `node` and `npm`
+- All images are based on `alpine`, and include `node` and `npm`
 
 ## Usage
 
