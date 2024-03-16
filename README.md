@@ -1,6 +1,6 @@
 # docker-html-pdf-chrome
 
-[![github-actions](https://github.com/theohbrothers/docker-html-pdf-chrome/workflows/ci-master-pr/badge.svg)](https://github.com/theohbrothers/docker-html-pdf-chrome/actions)
+[![github-actions](https://github.com/theohbrothers/docker-html-pdf-chrome/actions/workflows/ci-master-pr.yml/badge.svg?branch=master)](https://github.com/theohbrothers/docker-html-pdf-chrome/actions/workflows/ci-master-pr.yml)
 [![github-release](https://img.shields.io/github/v/release/theohbrothers/docker-html-pdf-chrome?style=flat-square)](https://github.com/theohbrothers/docker-html-pdf-chrome/releases/)
 [![docker-image-size](https://img.shields.io/docker/image-size/theohbrothers/docker-html-pdf-chrome/latest)](https://hub.docker.com/r/theohbrothers/docker-html-pdf-chrome)
 
